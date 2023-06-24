@@ -1,0 +1,342 @@
+.container5 {
+  display: flex;
+  align-items: center;
+}
+
+.text5 {
+  flex: 1;
+  padding: 20px;
+}
+
+.image5 {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+.container5 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.info {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.info li {
+  list-style-type: disc;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.logo_info {
+  display: flex;
+  align-items: center;
+}
+
+.logo_info img {
+  max-height: 30%;
+  max-width: 20%;
+  margin-left: auto;
+}
+
+
+
+
+.navbar {
+  background-color: #f2f2f2; /* Colore di sfondo della navbar */
+  padding: 10px;
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.logo {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+.nav-links {
+  margin-left: auto; /* Pushes the links to the right */
+}
+
+.logo-img {
+  width: 10em; /* Esempio di dimensione del logo uguale a 2 volte la dimensione del testo */
+  height: auto;
+}
+
+
+.divider {
+  background-image: url("loghi/HEADER.png");
+  padding: 10px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  height:50px;
+}
+
+
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+.navbar a {
+  color: black; /* Colore del testo dei link */
+  text-decoration: none;
+  margin-left: 10px; /* Aggiunge spazio tra i link */
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+
+
+.logo-header {
+  position: relative; /* Aggiunto */
+  background-image: url("loghi/HEADER.png");
+  background-size: auto;
+  background-position: center;
+  height: 120px;
+}
+  
+  .logo-container{
+    background-image: url("loghi/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 300px;
+    background-size: 700px 570px;  /* Larghezza x Altezza */
+  }
+
+  .logo-overlay {
+    position: absolute;
+    top: 15px;
+    right: 38px;
+    z-index: 2;
+    width: -100px; /* Imposta la larghezza desiderata */
+    background-size: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-overlay:nth-of-type(2) {
+    top: 14.3px;
+    right: 100px;
+    z-index: 2;
+  }
+
+
+  .search-bar {
+    position: absolute; /* Aggiunto */
+    top: 40px; /* Aggiunto */
+    left: 150px; /* Aggiunto */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Rimuovi #search-input e #search-button dallo stile precedente */
+  
+  #search-input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 250px;
+    outline: none;
+  }
+  
+  #search-button {
+    background-color: #f2f2f2c4;
+    border: none;
+    border-radius: 100px;
+    padding: 8px;
+    margin-left: 12px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #search-button img {
+    color: #312f05;
+    width: 40px;
+    height: 40px;
+  }
+  
+  #search-input:focus,
+  #search-button:focus {
+    background-color: #eee;
+  }
+  
+
+  .welcome-section p{
+    font-family: Arial, sans-serif; /* Cambia il font delle scritte */
+    margin-left: 3cm;
+    margin-right: 3cm;
+    font-size: 20px;
+  }
+
+  .image-chisiamo {
+    width: calc(100% - 6cm); /* Sottrai 6cm per i margini di 3cm a destra e sinistra */
+    margin-left: 3cm; /* Imposta il margine sinistro a 3cm */
+    margin-right: 3cm; /* Imposta il margine destro a 3cm */
+    overflow: hidden; /* Taglia l'immagine al contenitore genitore */
+    display: flex; /* Utilizza un layout flessibile per centrare l'immagine */
+    justify-content: center; /* Centra l'immagine orizzontalmente */
+    height: calc(100% - 43cm); /* Sottrai 10cm per il ritaglio di 5cm sopra e sotto */
+    margin-top: 1cm; /* Imposta il margine superiore a 5cm */
+    margin-bottom: 1cm; /* Imposta il margine inferiore a 5cm */
+  }
+  
+  .image-chisiamo img {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore genitore */
+    height: 50%; /* Imposta l'altezza in base all'aspetto proporzionale dell'immagine */
+  }
+  
+  
+
+  .featured-plants {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr); /* 3 colonne con larghezza uguale */
+    grid-gap: 40px; /* Spazio tra le palle */
+    justify-content: center;
+  }
+  
+  .plant-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plant-item img {
+    width: 400px; /* Aumenta la larghezza dell'immagine */
+    height: 275px; /* Imposta un'altezza fissa per mantenere il rettangolo */
+    border-radius: 0px; /* Rendi i bordi dell'immagine leggermente curvi */
+    transition: transform 0.3s; /* Transizione dell'ingrandimento al passaggio del mouse */
+  }
+  
+  .plant-item img:hover,
+  .plant-item img:active {
+    transform: scale(1.1); /* Ingrandisce leggermente l'immagine al passaggio del mouse o alla selezione */
+  }
+  
+
+  .gallery-title {
+    font-family: Arial, sans-serif;
+    margin-top: 75px; /* Regola il margine superiore per spostare il titolo più in basso */
+    margin-left: 3.2cm; /* Imposta il margine sinistro a 3 cm */
+    font-size: 35px;
+  }
+
+
+  .additional-image-container .additional-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 200px;
+    flex-direction: row-reverse; /* Inverte l'ordine degli elementi nella direzione orizzontale */
+  }
+  
+  
+
+  .additional-image-container {
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .additional-image-container .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .additional-image-container .additional-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 15px;
+  }
+  
+  .additional-image-container .logo img {
+    width: 250px;
+    height: auto;
+  }
+  
+  .additional-image-container .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .additional-image-container .navigation ul li {
+    margin-bottom: 10px;
+  }
+  
+  .additional-image-container .navigation ul li::before {
+    content: "\2022"; 
+    color: rgb(2, 2, 2);
+    margin-right: 5px;
+  }
+  
+  .additional-image-container .navigation ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  
+  .footbar {
+    background-color: #063e2b; /* Colore di sfondo verde scuro */
+    color: black; /* Colore del testo nero */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footbar-left {
+    font-weight: bold;
+  }
+  
+  .footbar-right {
+    text-decoration: underline;
+  }
+  
+  .footbar-right span {
+    text-decoration: none;
+  }
+  
+  .footbar-right span:last-child {
+    text-decoration: none;
+  }
+  
+  .footbar-right span:not(:last-child)::after {
+    content: " - ";
+  }
+  
+  .footbar-right a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  
+
+  

@@ -1,0 +1,230 @@
+
+.info {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.info li {
+  list-style-type: disc;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.logo_info {
+  display: flex;
+  align-items: center;
+}
+
+.logo_info img {
+  max-height: 30%;
+  max-width: 20%;
+  margin-left: auto;
+}
+
+
+
+.container {
+  background-color: #8FBC8B;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 73vh; /* Modifica: imposta l'altezza del contenitore al 100% dell'altezza della finestra */
+}
+
+.text {
+  flex: 1;
+  display: flex; /* Modifica: aggiungi display flex per allineare il testo verticalmente */
+  align-items: center; /* Modifica: allinea verticalmente il testo al centro */
+  margin-left: 10px; /* Modifica: aggiungi margine sinistro per spostare il testo a destra */
+}
+
+.text-back{
+  word-break: break-word; /* Modifica: il testo andrà a capo se va in overflow */
+
+
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto; /* Modifica: rimuove l'altezza massima per consentire all'immagine di adattarsi */
+  width: auto; /* Modifica: rimuove la larghezza massima per consentire all'immagine di adattarsi */
+  margin-top: auto; /* Modifica: sposta l'immagine in basso */
+
+}
+
+
+.featured-plants {
+    background-color: #ede7e7a1;
+    padding: 100px;
+    display: grid;
+  grid-template-columns: repeat(1, minmax(120px, 1fr)); /* Numero variabile di colonne con larghezza minima di 120px */
+    grid-gap: 51px; /* Spazio tra le palle */
+  flex-wrap: wrap; /* Permette il "wrapping" dei cerchi */
+  }
+
+  .plant-item a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Transizione del colore durante il passaggio del mouse */
+  }
+
+  .plant-item p:hover,
+  .plant-item p:active {
+
+  }
+
+  .plant-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s; /* Transizione dell'ingrandimento al passaggio del mouse */
+  }
+
+  .plant-item img:hover,
+  .plant-item img:active {
+    transform: scale(1.1); /* Ingrandisce leggermente l'immagine al passaggio del mouse o alla selezione */
+  }
+  .plant-item {
+    display: flex;
+    flex-direction: row; /* Modifica la direzione del flusso in orizzontale */
+    align-items: center; /* Allinea verticalmente l'immagine e il testo */
+  }
+
+
+
+  .plant-item p {
+    margin-left: 30px; /* Aggiunge un margine a sinistra per separare l'immagine dal testo */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+
+  
+  .additional-image {
+
+    height: 200px;
+    background-image: url("loghi/HEADER.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: repeat;
+
+  }
+.navbar {
+  background-color: #f2f2f2; /* Colore di sfondo della navbar */
+  padding: 10px;
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.logo {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+.nav-links {
+  margin-left: auto; /* Pushes the links to the right */
+}
+
+
+.divider {
+  background-image: url("loghi/HEADER.png");
+  padding: 10px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  height:50px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+
+
+.logo-img {
+  width: 10em; /* Esempio di dimensione del logo uguale a 2 volte la dimensione del testo */
+  height: auto;
+}
+
+.navbar a {
+  color: black; /* Colore del testo dei link */
+  text-decoration: none;
+  margin-left: 10px; /* Aggiunge spazio tra i link */
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+
+  .additional-image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+
+
+  
+  .footbar {
+    background-color: #063e2b; /* Colore di sfondo verde scuro */
+    color: black; /* Colore del testo nero */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footbar-left {
+    font-weight: bold;
+  }
+  
+  .footbar-right {
+    text-decoration: underline;
+  }
+  
+  .footbar-right span {
+    text-decoration: none;
+  }
+  
+  .footbar-right span:last-child {
+    text-decoration: none;
+  }
+  
+  .footbar-right span:not(:last-child)::after {
+    content: " - ";
+  }
+  
+  .footbar-right a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  

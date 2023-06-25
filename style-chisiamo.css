@@ -69,7 +69,7 @@
 
 
 .divider {
-  background-image: url("loghi/HEADER.png");
+  background-image: url("LOGHI/HEADER.png");
   padding: 10px;
   display: flex;
   align-items: center; /* Center vertically */
@@ -100,14 +100,14 @@
 
 .logo-header {
   position: relative; /* Aggiunto */
-  background-image: url("loghi/HEADER.png");
+  background-image: url("LOGHI/HEADER.png");
   background-size: auto;
   background-position: center;
   height: 120px;
 }
   
   .logo-container{
-    background-image: url("loghi/logo.png");
+    background-image: url("LOGHI/logo.png");
     background-position: center;
     background-repeat: no-repeat;
 

@@ -28,7 +28,7 @@
 
 
 .divider {
-  background-image: url("loghi/HEADER.png");
+  background-image: url("LOGHI/HEADER.png");
   padding: 10px;
   display: flex;
   align-items: center; /* Center vertically */
